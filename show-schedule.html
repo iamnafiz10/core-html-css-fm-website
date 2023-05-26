@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FM LAND - Online Radio HTML Template</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+  <!-- bootstrap 5  -->
+  <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/remixicon.css">
+  <!-- fontawesome 5  -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- lightcase css -->
+  <link rel="stylesheet" href="assets/css/lightcase.css">
+  <!-- slick slider css -->
+  <link rel="stylesheet" href="assets/css/lib/slick.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="preloader">
+    <div class="preloader-container">
+      <div class="preloader-icon">
+        <i class="ri-headphone-line"></i>
+        <i class="ri-radio-line"></i>
+      </div>
+      <p><span>FM</span> LAND</p>
+    </div>
+  </div>
+
+  <div class="scroll-top">
+    <a href="#"><i class="ri-arrow-up-line"></i></a>
+  </div>
+  <!-- navbar start -->
+  <nav class="navbar main-navbar navbar-expand-xl">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="site logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav site-menu m-auto mb-2 mb-lg-0">
+          <li class="menu-item menu-item-has-children">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="about.html">About Us</a>
+          </li>
+          <li class="menu-item">
+            <a class="active" href="show-schedule.html">Show Schedule</a>
+          </li>
+          <li class="menu-item">
+            <a href="blog.html">Blog</a>
+          </li>
+        </ul>
+
+        <a href="contact.html" class="btn white-btn btn-rounded">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <main class="site-body">
+    <!-- page banner start -->
+    <section class="inner-page-banner" style="background-image: url('assets/images/bg/inner-page-banner.jpg');">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="inner-page-title text-white">Show Schedule</h2>
+            <ul class="page-breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li>Shows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- page banner end -->
+
+    <!-- podcast section start -->
+    <section class="pt-120 pb-120 section-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="section-top">
+              <span class="top-title">Live Show</span>
+              <h2 class="section-title">Podcast Schedule</h2>
+            </div>
+          </div>
+        </div>
+
+        <ul class="nav nav-tabs show-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="day1-tab" data-bs-toggle="tab" data-bs-target="#day1-tab-pane"
+              type="button" role="tab" aria-controls="day1-tab-pane" aria-selected="true">Saturday</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="day2-tab" data-bs-toggle="tab" data-bs-target="#day2-tab-pane" type="button"
+              role="tab" aria-controls="day2-tab-pane" aria-selected="false">Sunday</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="day3-tab" data-bs-toggle="tab" data-bs-target="#day3-tab-pane" type="button"
+              role="tab" aria-controls="day3-tab-pane" aria-selected="false">Monday</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="day4-tab" data-bs-toggle="tab" data-bs-target="#day4-tab-pane" type="button"
+              role="tab" aria-controls="day4-tab-pane" aria-selected="false">Tuesday</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="day5-tab" data-bs-toggle="tab" data-bs-target="#day5-tab-pane" type="button"
+              role="tab" aria-controls="day5-tab-pane" aria-selected="false">Wednesday</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="day6-tab" data-bs-toggle="tab" data-bs-target="#day6-tab-pane" type="button"
+              role="tab" aria-controls="day6-tab-pane" aria-selected="false">Thursday</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="day7-tab" data-bs-toggle="tab" data-bs-target="#day7-tab-pane" type="button"
+              role="tab" aria-controls="day7-tab-pane" aria-selected="false">Friday</button>
+          </li>
+        </ul>
+        <div class="tab-content show-tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="day1-tab-pane" role="tabpanel" aria-labelledby="day1-tab"
+            tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end-->
+          </div>
+          <div class="tab-pane fade" id="day2-tab-pane" role="tabpanel" aria-labelledby="day2-tab" tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end -->
+          </div>
+          <div class="tab-pane fade" id="day3-tab-pane" role="tabpanel" aria-labelledby="day3-tab" tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end -->
+          </div>
+          <div class="tab-pane fade" id="day4-tab-pane" role="tabpanel" aria-labelledby="day4-tab" tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end -->
+          </div>
+          <div class="tab-pane fade" id="day5-tab-pane" role="tabpanel" aria-labelledby="day5-tab" tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end -->
+          </div>
+          <div class="tab-pane fade" id="day6-tab-pane" role="tabpanel" aria-labelledby="day6-tab" tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end -->
+          </div>
+          <div class="tab-pane fade" id="day7-tab-pane" role="tabpanel" aria-labelledby="day7-tab" tabindex="0">
+            <div class="podcast-slider">
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/3.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>11:35 AM</p>
+                      <p>TO</p>
+                      <p>12:55 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/3.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Live Music</h5>
+                      <p class="artist-name">RJ Josef</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/4.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>01:00 PM</p>
+                      <p>TO</p>
+                      <p>02:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/4.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">News Tech</h5>
+                      <p class="artist-name">RJ Mario</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/1.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>09:00 AM</p>
+                      <p>TO</p>
+                      <p>10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/1.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music of Pop</h5>
+                      <p class="artist-name">RJ Janeski</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+              <div class="single-slide">
+                <div class="podcast-item link-item">
+                  <a href="show-details.html" class="full-link"></a>
+                  <div class="podcast-item-thumb">
+                    <img src="assets/images/shows/podcast/2.jpg" alt="image">
+                    <div class="thumb-content">
+                      <p>10:15 AM</p>
+                      <p>TO</p>
+                      <p>11:35 AM</p>
+                    </div>
+                  </div>
+                  <div class="podcast-item-content">
+                    <div class="artist-thumb">
+                      <img src="assets/images/artist/2.jpg" alt="image">
+                    </div>
+                    <div class="artist-content">
+                      <h5 class="show-name">Music Podcast</h5>
+                      <p class="artist-name">RJ Pavis</p>
+                    </div>
+                  </div>
+                </div><!-- podcast-item end -->
+              </div>
+            </div><!-- podcast-slider end -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- podcast section end -->
+
+    <!-- previous show section start -->
+    <section class="previous-show-section pt-120 pb-120 overflow-hidden"
+      style="background-image: url('assets/images/bg/previous-show.jpg');">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="section-top">
+              <span class="top-title">Yesterday</span>
+              <h2 class="section-title">Previous shows </h2>
+            </div>
+          </div>
+        </div><!-- row end -->
+      </div>
+      <div class="previous-show-slider">
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/4.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/1.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Life Music</h5>
+                <p class="artist-name">Rj Movin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/6.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/2.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Music Artist Podcast</h5>
+                <p class="artist-name">Rj Sonai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/7.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/3.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Music World</h5>
+                <p class="artist-name">Rj Josino</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/6.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/2.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Music Artist Podcast</h5>
+                <p class="artist-name">Rj Sonai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/7.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/3.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Music World</h5>
+                <p class="artist-name">Rj Josino</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/6.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/2.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Music Artist Podcast</h5>
+                <p class="artist-name">Rj Sonai</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide">
+          <div class="show-item style-two">
+            <div class="thumb">
+              <img src="assets/images/shows/previous/7.jpg" alt="image">
+            </div>
+            <audio controls src="assets/audio/main.mp3" class="style-two"></audio>
+            <div class="show-item-content">
+              <div class="show-item-top">
+                <h5 class="show-item-top-title">“Music Of Life”</h5>
+                <span class="show-item-duration">24min</span>
+              </div>
+              <div class="artist-thumb">
+                <img src="assets/images/artist/3.jpg" alt="image">
+              </div>
+              <div class="artist-content">
+                <h5 class="show-name">Music World</h5>
+                <p class="artist-name">Rj Josino</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- previous show section end -->
+
+    <!-- upcoming show start -->
+    <section class="pt-120 pb-120 section-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="section-top">
+              <span class="top-title">Show</span>
+              <h2 class="section-title">Upcoming show</h2>
+            </div>
+          </div>
+        </div><!-- row end -->
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="upcoming-show">
+              <div class="upcoming-content">
+                <h4 class="upcoming-title">Music Life Event</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue maecenas commodo mollis sagittis
+                  quisque.
+                </p>
+                <div class="show-rj">
+                  <div class="show-rj-thumb">
+                    <img src="assets/images/shows/show-rj.jpg" alt="image">
+                  </div>
+                  <div class="show-rj-content">
+                    <h4 class="show-rj-name">RJ Merino</h4>
+                    <p>09AM To 10PM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="upcoming-thumb">
+                <img src="assets/images/shows/upcoming.jpg" alt="image">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- upcoming show end -->
+
+    <!-- subscribe section start -->
+    <section class="subscribe-section" style="background-image: url('assets/images/bg/subscribe.jpg');">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-6 col-lg-8 text-center">
+            <h2 class="section-title">Subscribe Our Newsletter</h2>
+            <p class="subscribe-section-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <form class="subscribe-form">
+              <input type="email" name="#0" class="form-control" placeholder="Email">
+              <button type="submit" class="btn btn-main">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe section end -->
+
+  </main><!-- site-body end -->
+
+  <!-- footer section start -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-xxl-4 col-xl-5 col-lg-4 text-lg-start text-center">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.png" alt="image">
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit nibh aenean eu, mattis egestas ut et.
+          </p>
+        </div>
+        <div class="col-xxl-8 col-xl-7 col-lg-8">
+          <nav class="footer-nav">
+            <ul class="footer-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="show-schedule.html">Show Schedule</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <hr>
+      <div class="row gy-2 align-items-center">
+        <div class="col-md-6 text-md-start text-center">
+          <p>© 2023 FMland. Design By Roshan Saiham Nafiz</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="social-links">
+            <li>
+              <a href="#0"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#0"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#0"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#0"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+  <!-- jQuery library -->
+  <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+  <!-- bootstrap 5 js -->
+  <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+  <!-- audio player js -->
+  <script src="assets/js/lib/maudio.js"></script>
+  <!-- slick  slider js -->
+  <script src="assets/js/lib/slick.min.js"></script>
+  <!-- wow js  -->
+  <script src="assets/js/lib/wow.min.js"></script>
+  <!-- contact js -->
+  <script src="assets/js/contact.js"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+<!-- Mirrored from pixner.net/fm/signle-fm/show-schedule.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 May 2023 05:10:25 GMT -->
+</html>
